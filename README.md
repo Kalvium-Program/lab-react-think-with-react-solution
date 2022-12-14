@@ -1,7 +1,6 @@
+![Logo-nav](https://s3.ap-south-1.amazonaws.com/kalvi-education.github.io/front-end-web-development/Kalvium-Logo.png)
 
-![Image description](https://i1.faceprep.in/ProGrad/prograd-logo.png)
-
-# ProGrad Lab | REACT - Think with React
+# Kalvium Lab | REACT - Think with React
 
 ## Learning Goals
 
@@ -28,8 +27,7 @@ In this exercise, you will try to setup the react application. As you can see re
 We will divide our work into three parts:
 
 - part I - Include react library in your html file
-- part II - Use JSX and babel compiler
-- part III - By using npm/yarn 
+- part II - By using npm/yarn
 
 So let's get started!
 
@@ -99,13 +97,13 @@ To get the above it is quite simple. Check the code snippet given below. There i
 **Component can be a react component - reusable piece of UI.
 **Props are properties of the component or element.
 **children can be a nested component or html element.
-**In the below code when you check the react element it has a `div` tag followed by null and a string called `Hey ProGrads! Welcome to React Learning`. The `div` tag refers to the component. null refers to the property and the statement is the children. When you inspect the element you can see a output similar to this. The next `div` tag is the children.**
+**In the below code when you check the react element it has a `div` tag followed by null and a string called `Hey Kalvians! Welcome to React Learning`. The `div` tag refers to the component. null refers to the property and the statement is the children. When you inspect the element you can see a output similar to this. The next `div` tag is the children.**
 ![Image description](https://i1.faceprep.in/ProGrad/l1-output3.png)
 
 ```
 // Functional component
 const Container = () =>{
-    return React.createElement(`div`,null,`Hey ProGrads! Welcome to React Learning`,
+    return React.createElement(`div`,null,`Hey Kalvians! Welcome to React Learning`,
        React.createElement(`div`,null,`Let's rock and roll`)
        );
 }
@@ -128,7 +126,7 @@ class ReactContainer extends React.Component{
 
   // render method to render the react dom 
     render(){
-        return React.createElement(`div`,null,`Hey ProGrads`,
+        return React.createElement(`div`,null,`Hey Kalvians`,
         React.createElement(`div`,null,`Let's rock and roll`)
         );
     }
@@ -160,8 +158,8 @@ Now you can use JSX in any <script> tag by adding type="text/babel" attribute to
     // JSX there should be one parent element
       render(){
           return (
-          <div>Hello! Welcome to ProGrads   
-             <div>Let's rock and roll </div>
+          <div>Hello! Welcome to Kalvium   
+             <div>This is babel</div>
          </div> )
       };  
   }
@@ -170,7 +168,13 @@ const container = document.getElementById('react-container');
 // Direclty pass the component to render
 ReactDOM.render(<ReactContainer/>,container);    
 ```
+
+Your output should look something like this:
+
+![](https://s3.ap-south-1.amazonaws.com/kalvi-education.github.io/front-end-web-development/babel-react-lab.png)
+
 Isn't the above one so easy. So instead of too many React.createElement you can use JSX which is super cool to use.
+
 
 ## Part III - CREATE REACT APP
 create-react-app is a project aimed at getting you up to speed with React in no time. It provides a ready-made React application starter, so you can dive into building your app without having to deal with Webpack and Babel configurations.
@@ -195,6 +199,9 @@ npm start`
 
 To run it just go to open the console and go the the application directory and just type `npm start`
 
+#### Task:
+Your task is to render `hello Kalvium` --> h3 tag,  using this method.
+
 ## Submission
 
 If you didn't add, commit and push the changes you made, this is the last call. :smile:
@@ -207,5 +214,5 @@ In this exercise, you've learnt various ways of setting up react in your system.
 
 This concludes the React setup. We are proud of you!
 
-Happy Coding ProGrad ❤️!
+Happy Coding Kalvium ❤️!
 
