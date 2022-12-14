@@ -90,7 +90,7 @@ If you get the above output, you can ensure that the react is completely setup i
 
 The component can be a functional component or class component. Now before moving to the class component let us try to use the same example given above and try to convert it as a functional component.
 This is going to be our output.
-![Image description](https://i1.faceprep.in/ProGrad/l1-output2.png)
+![Image description](https://s3.ap-south-1.amazonaws.com/kalvi-education.github.io/front-end-web-development/react-lab-installation.png)
 
 To get the above it is quite simple. Check the code snippet given below. There is no modification required in the index.html.
 **React.createElement has three attributes (component,props,children)**
@@ -98,7 +98,7 @@ To get the above it is quite simple. Check the code snippet given below. There i
 **Props are properties of the component or element.
 **children can be a nested component or html element.
 **In the below code when you check the react element it has a `div` tag followed by null and a string called `Hey Kalvians! Welcome to React Learning`. The `div` tag refers to the component. null refers to the property and the statement is the children. When you inspect the element you can see a output similar to this. The next `div` tag is the children.**
-![Image description](https://i1.faceprep.in/ProGrad/l1-output3.png)
+![Image description](https://s3.ap-south-1.amazonaws.com/kalvi-education.github.io/front-end-web-development/react-installation-two.png)
 
 ```
 // Functional component
@@ -127,7 +127,7 @@ class ReactContainer extends React.Component{
   // render method to render the react dom 
     render(){
         return React.createElement(`div`,null,`Hey Kalvians`,
-        React.createElement(`div`,null,`Let's rock and roll`)
+        React.createElement(`div`,null,`Let's rock and roll with classes`)
         );
     }
   
@@ -135,6 +135,8 @@ class ReactContainer extends React.Component{
 const container = document.getElementById('react-container');
 ReactDOM.render(React.createElement(ReactContainer),container);
 ```
+
+![](https://s3.ap-south-1.amazonaws.com/kalvi-education.github.io/front-end-web-development/react-lab-usingClasses-installation.png)
 
 You're ready to move to the next iteration. :raised_hands:
 
