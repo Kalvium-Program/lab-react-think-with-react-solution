@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Using React Libraries</title>
+  <!-- added these two lines -->
+  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+</head>
+<body>
+  <div id="react-container"></div> 
+  <script src="./app.js"></script>  
+  
+</body>
+
+
+
+  <!-- Part 2: answer: -->
+
+<!-- <script type="text/babel">
+  class ReactContainerTwo extends React.Component{
+  // JSX tags
+  // JSX there should be one parent element
+    render(){
+        return (
+        <div>Hello! Welcome to Kalvium   
+           <div>Let's rock and roll - this is babel</div>
+       </div> )
+    };  
+}
+
+const containerFour = document.getElementById('react-container');
+// Direclty pass the component to render
+ReactDOM.render(<ReactContainerTwo/>,containerFour);
+
+</script> -->
+
+
+</html>
